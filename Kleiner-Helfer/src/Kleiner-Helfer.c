@@ -23,7 +23,7 @@ int Stop_Scheilfe;
 
 int main(void) {
 
-	printf("Willkomen in der Welt von Analaysi\n");
+	printf("Willkomen in der Welt von Analaysis\n");
 	printf("Das kann ich dir bieten\n");
 	printf("\t -1- \n");
 	printf("\t -2- \n");
