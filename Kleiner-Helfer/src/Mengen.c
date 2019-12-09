@@ -9,40 +9,53 @@
  Version 	Datum 		Initalen		Was
  0.1		03.12		NA				Hauptmenu
  0.2 		04.12 		NA				Haupmenge,Intervall,Modifkationen
+ 0.3		06.12		NA				Definiton,Mengenablidung
  ============================================================================
  */
 // Benutze Libarys
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
+
 int Menge (){
     int auswahl;
-    char i,j;
-	printf("Willkommen im Reich der Mengen\n");
+    char i;
+
+
+	printf("\n");
     printf("Das kann ich dir biten\n");
 
     while (i != 'e')
     {
-
-	    printf(" -1- Grundmenge        \n");
-	    printf(" -2- Modiifikationen   \n");
-	    printf(" -3- Intervalle        \n");
-	    printf(" -4- Zuruck zum Hauptmenu\n");
+		printf(" -1- Definition \n");
+		printf(" -2- Vereinigunsmenge,etc\n");
+	    printf(" -3- Grundmenge        \n");
+	    printf(" -4- Modiifikationen   \n");
+	    printf(" -5- Intervalle        \n");
+	    printf(" -6- Zuruck zum Hauptmenu\n");
 	    printf("Was draf sein:");
 	    scanf("%d",&auswahl);
 
 	    switch (auswahl)
 	    {
-	    case 1:
-		Grundmengen();
+		case 1:
+		Defition();
 		break;
 	    case 2:
-		Modifikationen();
+		Vereinungsmenge();
 		break;
-	    case 3:
-		Intervalle();
+		case 3:
+		Grundmengen();
 		break;
 	    case 4:
+		Modifikationen();
+		break;
+	    case 5:
+		Intervalle();
+		break;
+	    case 6:
         printf("Danke für vorbeischauen und bis bald");
         i = 'e';
 		break;
@@ -57,7 +70,7 @@ int Menge (){
     }
 
     system("PAUSE");
-
+    return 0;
 }
 
 int Grundmengen (void){
@@ -73,6 +86,8 @@ int Grundmengen (void){
 	printf("1/5,1/9,1/10\n\n");
 	printf("C = komplexe Zahlen\n");
 	printf("6\n");
+
+	return 0;
 
 
 }
@@ -91,9 +106,10 @@ int Modifikationen(void){
 	printf("<= = kleiner/gleich\n");
 	printf(">= = groesser/gleich\n");
 
+	return 0;
 }
 int Intervalle(void){
-    char b;
+
 	printf("Das sind die Intervallen\n\n");
 	printf("Endliche Intervalle b > a\n");
 	printf("[a,b] := {x in R | a <= x <= b}\n");
@@ -106,5 +122,22 @@ int Intervalle(void){
 	printf("[a, ∞[ := {x in R | a <= x}\n");
     printf("]a, ∞[ := {x in R | a < x}\n");
 
+    return 0;
 
+}
+int Defition (void){
+
+	printf("Defintion nach Cantor: Unter einer Menge verstehn wir jede Zusammenfassung von wohlunterschiedenen Objkenten unsereer Anschanung zu einem Ganzen.\n");
+	printf("Menge = Beutel /Tasche von Objekten");
+	printf("Einzele objekte werden Elemente der Menge genannt");
+
+	return 0;
+}
+int Vereinungsmenge (void){
+
+	printf("Vereinung\n");
+	printf("Formel\n");
+	printf("Vendiagramm\n");
+
+	return 0;
 }

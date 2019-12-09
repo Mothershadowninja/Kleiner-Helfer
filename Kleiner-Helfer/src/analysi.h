@@ -6,6 +6,8 @@ int Menge ();
 int Grundmengen (void);
 int Modifikationen(void);
 int Intervalle(void);
+int Defition (void);
+int Vereinungsmenge (void);
 // Funktionen
 
 // Folgen Reihen & Grenzwerte
