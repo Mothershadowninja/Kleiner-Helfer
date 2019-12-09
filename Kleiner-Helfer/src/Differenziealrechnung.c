@@ -21,8 +21,8 @@ int Differentialrechnung (void)
 	printf("Produkt-Regel (=Leibniz-Regel): f(x) = g(x)*h(x) --> f'(x) = g'(x)*h(x)+g(x)*h'(x)\n");
 	printf("Quadrat-Regel: f(x) = g^2(x) --> f'(x) = 2*g(x)*g'(x)\n");
 
-	printf("\n");
-	printf("\n");
+	printf("bla\n");
+	printf("bla\n");
 
 
 return 0;
