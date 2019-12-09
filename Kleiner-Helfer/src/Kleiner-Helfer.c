@@ -58,11 +58,11 @@ int main(void) {
 		 break;
 	 case 5:
 		 printf("5");
-		 Differentialrechnung (void);
+		 differentialrechnung();
 		 break;
 	 case 6:
 		 printf("6");
-		 integralrechnung (void);
+		 integralrechnung();
 	   	 break;
 	 case 7:
 		 printf("7");
@@ -73,7 +73,7 @@ int main(void) {
 	 case 0:
 	   printf("0");
 	   i = 'e';
-	   printf("Danke das sie unser System genutz haben");
+	   printf("Danke das sie unser System genutzt haben");
 	   break;
 	 default:
 
@@ -81,7 +81,6 @@ int main(void) {
 	}
 
 	}
-
 
 
 }

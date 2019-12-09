@@ -18,6 +18,6 @@ int integralrechnung (void)
 // Elemtarfunktionen
 
 //Diffenrzialrechnung
-int Differentialrechnung (void);
+int differentialrechnung (void);
 
 #endif

@@ -8,7 +8,7 @@
 
 
 
-int integralrechnung (void)
+int integralrechnung()
 {
 
 

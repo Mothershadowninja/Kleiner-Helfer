@@ -7,7 +7,7 @@
 
 
 
-int Differentialrechnung (void)
+int differentialrechnung()
 {
 
 		printf("Sie haben Differentialrechnung gewaehlt\n");
