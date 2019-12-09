@@ -16,5 +16,6 @@ int Vereinungsmenge (void);
 // Elemtarfunktionen
 
 //Diffenrzialrechnung
+int Differentialrechnung (void);
 
 #endif
