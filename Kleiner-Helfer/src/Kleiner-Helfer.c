@@ -9,6 +9,7 @@
  Version 	Datum 		Initalen		Was
  0.1		03.12		NA				Hauptmenu
  0.2		04.12		NA				Modul Menge läuft
+ 0.3        09.12       CS				Modul Diff. Integrall läuft
  ============================================================================
  */
 // Benutze Libarys
@@ -24,7 +25,7 @@ int Auswahl;
 int Stop_Scheilfe;
 char i;
 
-int main(void) {
+int main(void){
 
 	printf("Willkomen in der Welt von Analaysis\n");
 	printf("Das kann ich dir bieten\n");
@@ -81,6 +82,5 @@ int main(void) {
 	}
 
 	}
-
-
 }
+
