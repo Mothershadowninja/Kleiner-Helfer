@@ -62,6 +62,7 @@ int main(void) {
 		 break;
 	 case 6:
 		 printf("6");
+		 integralrechnung (void);
 	   	 break;
 	 case 7:
 		 printf("7");

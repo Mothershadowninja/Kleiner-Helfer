@@ -12,6 +12,8 @@ int Vereinungsmenge (void);
 
 // Folgen Reihen & Grenzwerte
 
+// Integralrechnung
+int integralrechnung (void)
 
 // Elemtarfunktionen
 
