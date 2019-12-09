@@ -10,20 +10,29 @@
 int Differentialrechnung (void)
 {
 
-
-	printf("Sie haben Differentialrechnung gewaehlt\n");
-	printf("Um eine Funktion in WolframAlpha abzuleiten, gebe folgenden Befehl ein:\n");
-	printf("1. Ableitung:\t\t\t D[x^2,x]\n");
-	printf("Um die 5. Ableitung zu erhalten: D[y^2*x^7,{x,5}]\n");
-
-	printf("\n");
-
-	printf("Produkt-Regel (=Leibniz-Regel): f(x) = g(x)*h(x) --> f'(x) = g'(x)*h(x)+g(x)*h'(x)\n");
-	printf("Quadrat-Regel: f(x) = g^2(x) --> f'(x) = 2*g(x)*g'(x)\n");
-
-	printf("bla\n");
-	printf("bla\n");
-
+		printf("Sie haben Differentialrechnung gewaehlt\n");
+		printf("\n");
+		printf("Um eine Funktion in WOLFRAMALPHA abzuleiten, gebe folgenden Befehl ein:\n");
+		printf("1. Ableitung:\t D[x^2,x]\n");
+		printf("5. Ableitung:\t D[y^2*x^7,{x,5}]\n");
+		printf("\n");
+		printf("Produkt-Regel: f(x) = g(x)*h(x) --> f'(x) = g'(x)*h(x)+g(x)*h'(x)\n");
+		printf("Quadrat-Regel: f(x) = g^2(x)    --> f'(x) = 2*g(x)*g'(x)\n");
+		printf("Wurzel-Regel:  f(x) = sqrt(g(x) --> f'(x) = (g'(x)/(2*sqrt(g(x))))\n");
+		printf("Ketten-Regel:  f(x) = g(h(x))   --> f'(x) = g'(h(x))*h'(x)\n");
+		printf("Kurzregel:     f(x) = a^x       --> f'(x) = ln(a)*a^x\n");
+		printf("\n");
+		printf("Trigonometrische Ableitungen:\n");
+		printf("sin'(x) = cos(x)\n");
+		printf("cos'(x) = -sin(x)\n");
+		printf("tan'(x) = 1+tan^2(x)\n");
+		printf("cot'(x) = -1-cot^2(x)\n");
+		printf("\n");
+		printf("Hyperbolische Ableitungen:\n");
+		printf("sinh'(x) = cosh(x)\n");
+		printf("cosh'(x) = sinh(x)\n");
+		printf("tanh'(x) = 1-tanh^2(x)\n");
+		printf("coth'(x) = 1-coth^2(x)\n");
 
 return 0;
 }
