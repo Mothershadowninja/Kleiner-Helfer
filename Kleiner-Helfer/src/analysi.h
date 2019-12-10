@@ -17,6 +17,9 @@ int integralrechnung (void);
 
 // Elemtarfunktionen
 
+// Kurvendiskussion
+int kurvendiskussion (void);
+
 //Diffenrzialrechnung
 int differentialrechnung (void);
 

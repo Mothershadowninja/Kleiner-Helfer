@@ -11,7 +11,7 @@
 int integralrechnung()
 {
 
-
+	printf("\n");
 	printf("Sie haben Integralrechnung gewaehlt\n");
 	printf("\n");
 

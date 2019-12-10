@@ -9,7 +9,7 @@
 
 int differentialrechnung()
 {
-
+		printf("\n");
 		printf("Sie haben Differentialrechnung gewaehlt\n");
 		printf("\n");
 		printf("Um eine Funktion in WOLFRAMALPHA abzuleiten, gebe folgenden Befehl ein:\n");

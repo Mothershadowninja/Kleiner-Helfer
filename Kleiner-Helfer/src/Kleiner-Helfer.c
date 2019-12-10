@@ -10,6 +10,7 @@
  0.1		03.12		NA				Hauptmenu
  0.2		04.12		NA				Modul Menge läuft
  0.3        09.12       CS				Modul Diff. Integrall läuft
+ 0.4		10.12		CS				Modul Kurvendiskussion hinzugefügt
  ============================================================================
  */
 // Benutze Libarys
@@ -27,20 +28,20 @@ char i;
 
 int main(void){
 
-	printf("Willkomen in der Welt von Analaysis\n");
+	printf("Willkommen in der Welt von Analysis\n");
 	printf("Das kann ich dir bieten\n");
 
 	while (i != 'e'){
 	printf("\t -1- Menge \n");
 	printf("\t -2- Funktion\n");
-	printf("\t -3- Reihen,Folgen & Grenzwerte\n");
-	printf("\t -4- Elemtarfunktionen\n");
-	printf("\t -5- Differentzialrechnung\n");
+	printf("\t -3- Reihen, Folgen & Grenzwerte\n");
+	printf("\t -4- Elementarfunktionen\n");
+	printf("\t -5- Differentialrechnung\n");
 	printf("\t -6- Integralrechnung\n");
-	printf("\t -7- Kurvendiskusion\n");
-	printf("\t -8- Mulitable-Choosie Fragen\n");
+	printf("\t -7- Kurvendiskussion\n");
+	printf("\t -8- Multiple Choice Fragen\n");
 	printf("\t -0- Zurueck zum Hauptmenu\n");
-	printf("Was draf es sein ?");
+	printf("Was darf es sein ?");
 	scanf("%d",&Auswahl);
 
 	switch (Auswahl){
@@ -67,6 +68,7 @@ int main(void){
 	   	 break;
 	 case 7:
 		 printf("7");
+		 kurvendiskussion();
 		 break;
 	 case 8:
 		 printf("8");
