@@ -2,7 +2,7 @@
 #define analysi.h
 
 // Mengen
-int Menge ();
+int Menge (void);
 int Grundmengen (void);
 int Modifikationen(void);
 int Intervalle(void);

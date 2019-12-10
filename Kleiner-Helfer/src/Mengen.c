@@ -10,6 +10,7 @@
  0.1		03.12		NA				Hauptmenu
  0.2 		04.12 		NA				Haupmenge,Intervall,Modifkationen
  0.3		06.12		NA				Definiton,Mengenablidung
+ 1.0 		10.12		NA 				Mengen,Logo,Console Clear
  ============================================================================
  */
 // Benutze Libarys
@@ -19,11 +20,11 @@
 
 
 
-int Menge (){
+int Menge (void){
     int auswahl;
-    char i;
+    char i,j,b;
 
-    printf(R"EOF(
+	printf(R"EOF(
  __       __                                                   
 /  \     /  |                                                  
 $$  \   /$$ |  ______   _______    ______    ______   _______  
@@ -36,7 +37,8 @@ $$/      $$/  $$$$$$$/ $$/   $$/  $$$$$$$ | $$$$$$$/ $$/   $$/
                                  /  \__$$ |                    
                                  $$    $$/                     
                                   $$$$$$/            
-    )EOF");
+
+)EOF");
 
 	printf("\n");
     printf("Das kann ich dir biten\n");
@@ -51,6 +53,7 @@ $$/      $$/  $$$$$$$/ $$/   $$/  $$$$$$$ | $$$$$$$/ $$/   $$/
 	    printf(" -6- Zuruck zum Hauptmenu\n");
 	    printf("Was draf sein:");
 	    scanf("%d",&auswahl);
+		system("cls");
 
 	    switch (auswahl)
 	    {
@@ -84,7 +87,7 @@ $$/      $$/  $$$$$$$/ $$/   $$/  $$$$$$$ | $$$$$$$/ $$/   $$/
     }
 
     system("PAUSE");
-    return 0;
+
 }
 
 int Grundmengen (void){
@@ -100,9 +103,8 @@ int Grundmengen (void){
 	printf("1/5,1/9,1/10\n\n");
 	printf("C = komplexe Zahlen\n");
 	printf("6\n");
-
-	return 0;
-
+    system("PAUSE");
+	system("cls");
 
 }
 int Modifikationen(void){
@@ -119,11 +121,11 @@ int Modifikationen(void){
 	printf("A_0^- = A0 hoch -\n");
 	printf("<= = kleiner/gleich\n");
 	printf(">= = groesser/gleich\n");
-
-	return 0;
+    system("PAUSE");
+	system("cls");
 }
 int Intervalle(void){
-
+    char b;
 	printf("Das sind die Intervallen\n\n");
 	printf("Endliche Intervalle b > a\n");
 	printf("[a,b] := {x in R | a <= x <= b}\n");
@@ -135,8 +137,8 @@ int Intervalle(void){
 	printf("]-∞,b[ := {x in R | x <  b}\n");
 	printf("[a, ∞[ := {x in R | a <= x}\n");
     printf("]a, ∞[ := {x in R | a < x}\n");
-
-    return 0;
+	system("PAUSE");
+	system("cls");
 
 }
 int Defition (void){
@@ -144,15 +146,144 @@ int Defition (void){
 	printf("Defintion nach Cantor: Unter einer Menge verstehn wir jede Zusammenfassung von wohlunterschiedenen Objkenten unsereer Anschanung zu einem Ganzen.\n");
 	printf("Menge = Beutel /Tasche von Objekten");
 	printf("Einzele objekte werden Elemente der Menge genannt");
-
-	return 0;
+	system("PAUSE");
+	system("cls");
 }
 int Vereinungsmenge (void){
 
-	printf("Vereinung\n");
-	printf("Formel\n");
-	printf("Vendiagramm\n");
+	int auswahl;
+    char i,j,b;
+
+	printf("\n");
+    printf("Das kann ich dir biten\n");
+
+    while (i != 'e')
+    {
+		printf(" -1- Vereinigungsmenge \n");
+		printf(" -2- Schnittmenge,etc\n");
+	    printf(" -3- Mengendifferenz        \n");
+	    printf(" -4- Symetriemenge    \n");
+	    printf(" -5- Zuruck zum Hauptmenu       \n");
+	    printf("Was draf sein:");
+	    scanf("%d",&auswahl);
+		system("cls");
 
 
-	return 0;
+	    switch (auswahl)
+	    {
+		case 1:
+		printf("Vereinungsmenge\n");
+		printf("Formel\n");
+		printf("Vendiagramm\n");
+		printf(R"EOF(
+			
+		y::::::::::::::::::::::::::::::::::::::y
+		o          ```.```    ```.```          o
+		o      `.+syhhhhhyyssyyhhhhhys+.       o
+		o     :shyyyyyyyhdhhhhdhyyyyyyyhs:     o
+		o   `ohyyyyyyyyhdyyyyyydhyyyyyyyyho`   o
+		o   ohyyyyyyyyhdyyyyyyyydhyyyyyyyyho   o
+		o   dyyyyyyyyydhyyyyyyyyhdyyyyyyyyyd   o
+		o   dyyyyyyyyydhyyyyyyyyhdyyyyyyyyyd   o
+		o   shyyyyyyyyhdyyyyyyyydhyyyyyyyyhs   o
+		o   `shyyyyyyyyhdyyyyyydhyyyyyyyyhs`   o
+		o     /yhyyyyyyyhdhyyhdhyyyyyyyhy/     o
+		o      `-+shhhhhhhyssyhhhhhhhs+-`      o
+		o          ``.--.``  ``.--.``          o
+		y::::::::::::::::::::::::::::::::::::::y
+		
+		
+
+		)EOF");
+		system("PAUSE");
+		system("cls");
+
+		break;
+	    case 2:
+		printf("Schnittmenge\n");
+		printf(R"EOF(
+
+			y::::::::::::::::::::::::::::::::::::::y
+			o           `````      `````           o
+			o       .::---..--/oo:--..---::.       o
+			o     -:.       `ohhhy+`       .:-     o
+			o   `+.        -hyyyyyyh-        .+`   o
+			o   +.        .dyyyyyyyyh`        .+   o
+			o   o         +hyyyyyyyyh+         o   o
+			o   o         ohyyyyyyyyh+         o   o
+			o   +`        .dyyyyyyyyh.        `+   o
+			o   `+.        :hyyyyyyh:        .+`   o
+			o     ::.       .ohyyho.       .::     o
+			o      `-:---.`..-/ss/-..`.---:-`      o
+			o           `...``    ``...`           o
+			y::::::::::::::::::::::::::::::::::::::y
+
+			)EOF");
+		system("PAUSE");
+		system("cls");
+
+		break;
+		case 3:
+
+		printf(R"EOF(
+
+			
+		y::::::::::::::::::::::::::::::::::::::y
+		o	          ```.```     `````           o
+		o       .+syhhhhhyso+:--..---::.       o
+		o     :shyyyyyyyhy/``:/`       .:-     o
+		o   `ohyyyyyyyyh+`    `/-        .+`   o
+		o   ohyyyyyyyyho        +`        .+   o
+		o   dyyyyyyyyyd`        `+         o   o
+		o   dyyyyyyyyyd`        `+         o   o
+		o   shyyyyyyyyho        +.        `+   o
+		o   `shyyyyyyyyh+      /-        .+`   o
+		o     /yhyyyyyyyhs:  -/.       .::     o
+		o      `-+syhhhhhhyo+/-..`.---:-`      o
+		o          ``.-..``   ``...`           o
+		y::::::::::::::::::::::::::::::::::::::y
+
+			)EOF");
+		system("PAUSE");
+		system("cls");
+		break;
+	    case 4:
+		printf("Symetriemenge\n");
+		printf(R"EOF(
+
+		y::::::::::::::::::::::::::::::::::::::y
+		o          ```.```    ```.```          o
+		o       .+syhhhhhysoosyhhhhhys+.       o
+		o     :shyyyyyyyhy/``/yhyyyyyyyhs:     o
+		o   `ohyyyyyyyyh+`    `+hyyyyyyyyho`   o
+		o   ohyyyyyyyyho        ohyyyyyyyyho   o
+		o   dyyyyyyyyyd`        `dyyyyyyyyyd   o
+		o   dyyyyyyyyyd`        `dyyyyyyyyyd   o
+		o   shyyyyyyyyho        ohyyyyyyyyhs   o
+		o   `shyyyyyyyyh+      +hyyyyyyyyhs`   o
+		o     /yhyyyyyyyhs:  :shyyyyyyyhy/     o
+		o      `-+syhhhhhhyooyhhhhhhys+-`      o
+		o          ``.-..``  ``..-.``          o
+		y::::::::::::::::::::::::::::::::::::::y
+
+		)EOF");
+		system("PAUSE");
+		system("cls");
+		break;
+	    case 5:
+        printf("Bye have a great Time\n");
+        i = 'e';
+		break;
+
+	    default:
+        printf("Falsche Eingabe bitte erneut eingeben\n");
+
+		break;
+	    }
+
+
+    }
+
+
+
 }

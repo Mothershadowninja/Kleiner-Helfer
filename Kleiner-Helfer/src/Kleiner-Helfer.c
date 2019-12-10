@@ -11,6 +11,7 @@
  0.2		04.12		NA				Modul Menge läuft
  0.3        09.12       CS				Modul Diff. Integrall läuft
  0.4		10.12		CS				Modul Kurvendiskussion hinzugefügt
+ 0.5		10.12		NA				Modul Menge fertig, Logo Hauptmenu, Console Clear
  ============================================================================
  */
 // Benutze Libarys
@@ -28,6 +29,18 @@ char i;
 
 int main(void){
 
+	printf(R"EOF(
+  ___              _           _     
+ / _ \            | |         (_)    
+/ /_\ \_ __   __ _| |_   _ ___ _ ___ 
+|  _  | '_ \ / _` | | | | / __| / __|
+| | | | | | | (_| | | |_| \__ \ \__ \
+\_| |_/_| |_|\__,_|_|\__, |___/_|___/
+                      __/ |          
+                     |___/   
+
+	)EOF");
+	printf("\n");
 	printf("Willkommen in der Welt von Analysis\n");
 	printf("Das kann ich dir bieten\n");
 
@@ -46,32 +59,44 @@ int main(void){
 
 	switch (Auswahl){
 	 case 1:
-		 printf("1");
+		 system("cls");
 		 Menge();
+		 system("cls");
 	   	 break;
 	 case 2:
+		 system("cls");
 		 printf("2");
+		 system("cls");
 	   	 break;
 	 case 3:
+		 system("cls");
 		 printf("3");
+		 system("cls");
 	   	 break;
 	 case 4:
+		 system("cls");
 		 printf("4");
+		 system("cls");
 		 break;
 	 case 5:
-		 printf("5");
+		 system("cls");
 		 differentialrechnung();
+		 system("cls");
 		 break;
 	 case 6:
-		 printf("6");
+		 system("cls");
 		 integralrechnung();
+		 system("cls");
 	   	 break;
 	 case 7:
-		 printf("7");
+		 system("cls");
 		 kurvendiskussion();
+		 system("cls");
 		 break;
 	 case 8:
+		 system("cls");
 		 printf("8");
+		 system("cls");
 		 break;
 	 case 0:
 	   printf("0");
@@ -79,7 +104,7 @@ int main(void){
 	   printf("Danke das sie unser System genutzt haben");
 	   break;
 	 default:
-
+		 printf("Bisch du blöd?? Flasche Eingabe");
 	   break;
 	}
 
