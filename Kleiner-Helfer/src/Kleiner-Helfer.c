@@ -12,7 +12,7 @@
  0.3        09.12       CS				Modul Diff. Integrall läuft
  0.4		10.12		CS				Modul Kurvendiskussion hinzugefügt
  0.5		10.12		NA				Modul Menge fertig, Logo Hauptmenu, Console Clear
- 0.6		14.12		NA				Modul Mulitabel choose läuft
+ 0.6		14.12		NA				Modul Mulitabel choose läuft+ Easter EGG
  ============================================================================
  */
 // Benutze Libarys

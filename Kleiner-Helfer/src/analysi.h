@@ -23,7 +23,7 @@ int kurvendiskussion (void);
 //Diffenrzialrechnung
 int differentialrechnung (void);
 
-//Mulitablechose
+//Mulitablechose Fragen
 int mulitablechose (void);
 int Random ();
 void genMap();

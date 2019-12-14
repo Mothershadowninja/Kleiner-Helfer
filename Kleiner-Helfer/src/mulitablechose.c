@@ -7,7 +7,7 @@
  Description : Kleienr Helfer für Analaysi
 
  Version 	Datum 		Initalen		Was
- 0.1		03.12		NA				Menu,Random fertig
+ 0.1		03.12		NA				Menu,Random fertig, Easter EGG
  ============================================================================
  */
 // Benutze Libarys
