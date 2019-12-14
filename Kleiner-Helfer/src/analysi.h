@@ -23,4 +23,21 @@ int kurvendiskussion (void);
 //Diffenrzialrechnung
 int differentialrechnung (void);
 
+//Mulitablechose
+int mulitablechose (void);
+int Random ();
+void genMap();
+void draw();
+void move();
+void genPlayer();
+void genEnemy();
+void hideCursor();
+void kInp();
+void genDefDir();
+void goToXY(int column, int line);
+void grow();
+void freeMove();
+void reset();
+int Snake();
+
 #endif

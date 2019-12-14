@@ -12,6 +12,7 @@
  0.3        09.12       CS				Modul Diff. Integrall läuft
  0.4		10.12		CS				Modul Kurvendiskussion hinzugefügt
  0.5		10.12		NA				Modul Menge fertig, Logo Hauptmenu, Console Clear
+ 0.6		14.12		NA				Modul Mulitabel choose läuft
  ============================================================================
  */
 // Benutze Libarys
@@ -25,7 +26,7 @@
 // Definiert Variabeln
 int Auswahl;
 int Stop_Scheilfe;
-char i;
+int i;
 
 int main(void){
 
@@ -66,37 +67,37 @@ int main(void){
 	 case 2:
 		 system("cls");
 		 printf("2");
-		 system("cls");
+
 	   	 break;
 	 case 3:
 		 system("cls");
 		 printf("3");
-		 system("cls");
+
 	   	 break;
 	 case 4:
 		 system("cls");
 		 printf("4");
-		 system("cls");
+
 		 break;
 	 case 5:
 		 system("cls");
 		 differentialrechnung();
-		 system("cls");
+
 		 break;
 	 case 6:
 		 system("cls");
 		 integralrechnung();
-		 system("cls");
+
 	   	 break;
 	 case 7:
 		 system("cls");
 		 kurvendiskussion();
-		 system("cls");
+
 		 break;
 	 case 8:
 		 system("cls");
-		 printf("8");
-		 system("cls");
+		 mulitablechose();
+
 		 break;
 	 case 0:
 	   printf("0");
