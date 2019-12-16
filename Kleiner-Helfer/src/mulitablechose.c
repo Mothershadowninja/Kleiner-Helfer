@@ -36,7 +36,7 @@ ___  ___      _ _   _       _     _
         )EOF");
     printf("\n");
 
-    printf("Willikoen bei der Mulitable-Choose Fragen der Analaysis\n");
+    printf("Willkommen bei der Multiple Choice Fragen der Analysis\n");
 
     // Schleife damit eine Mehrfach auswahl möglich ist
 
@@ -44,10 +44,10 @@ ___  ___      _ _   _       _     _
     {
         // Auswahl nach den Themen
 
-		printf("\t -1- Randome alle Fragen \n");
+		printf("\t -1- Random alle Fragen \n");
         printf("\t -2- Hacker Mode\n");
-        printf("\t -3- Züruck zu Hauptmenu\n");
-        printf("Was draf es sein?");
+        printf("\t -3- Zurueck zum Hauptmenu\n");
+        printf("Was darf es sein?");
 
         // Einsehen der Auswahl
 	    scanf("%d",&Auswahl);
@@ -70,7 +70,7 @@ ___  ___      _ _   _       _     _
         Snake();
         break;
         default:
-        printf("Flasche Eingabe");
+        printf("Falsche Eingabe");
         break;
 	    }
 
