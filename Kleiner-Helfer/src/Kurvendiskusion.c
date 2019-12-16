@@ -60,7 +60,7 @@ void update(CHAR_INFO consoleBuffer[])
 }
 
 
-int main (void)
+int kurvendiskussion (void)
 {
 	// Variablen:
 	float x = 0;

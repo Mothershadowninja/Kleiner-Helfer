@@ -15,7 +15,7 @@ NONE */
 
 
 
-int main (void)
+int Integralrechnung (void)
 {
 	// Theorie
 	printf("\n");

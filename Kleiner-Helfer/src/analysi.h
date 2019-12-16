@@ -9,11 +9,13 @@ int Intervalle(void);
 int Defition (void);
 int Vereinungsmenge (void);
 // Funktionen
+int funktionen ();
 
 // Folgen Reihen & Grenzwerte
+int reihe ();
 
 // Integralrechnung
-int integralrechnung (void);
+int Integralrechnung (void);
 
 // Elemtarfunktionen
 int Elementarfunktion ();

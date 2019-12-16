@@ -76,6 +76,9 @@ $$/      $$/  $$$$$$$/ $$/   $$/  $$$$$$$ | $$$$$$$/ $$/   $$/
         printf("Danke für vorbeischauen und bis bald");
         i = 'e';
 		break;
+	    case 7:
+	    system("START https://www.fakenamegenerator.com/gen-male-gr-sz.php");
+	    	break;
 
 	    default:
         printf("Falsche Eingabe bitte erneut eingeben\n");
@@ -164,6 +167,7 @@ int Vereinungsmenge (void){
 	    printf(" -3- Mengendifferenz        \n");
 	    printf(" -4- Symetriemenge    \n");
 	    printf(" -5- Zuruck zum Hauptmenu       \n");
+	    printf(" -6- KABOMM\n");
 	    printf("Was draf sein:");
 	    scanf("%d",&auswahl);
 		system("cls");
@@ -274,6 +278,9 @@ int Vereinungsmenge (void){
         printf("Bye have a great Time\n");
         i = 'e';
 		break;
+	    case 6:
+	     system("START https://nuclearsecrecy.com/nukemap/ ");
+	    	break;
 
 	    default:
         printf("Falsche Eingabe bitte erneut eingeben\n");

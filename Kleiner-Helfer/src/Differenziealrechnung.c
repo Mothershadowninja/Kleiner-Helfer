@@ -15,7 +15,7 @@ NONE */
 
 
 
-int main (void)
+int differentialrechnung (void)
 {
 	// Variablen
 	const float e = 2.718281828459;
