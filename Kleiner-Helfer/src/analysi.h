@@ -25,7 +25,7 @@ int differentialrechnung (void);
 
 //Mulitablechose Fragen
 int mulitablechose (void);
-int Random ();
+int Random (void);
 void genMap();
 void draw();
 void move();

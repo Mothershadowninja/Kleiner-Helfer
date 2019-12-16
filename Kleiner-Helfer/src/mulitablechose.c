@@ -27,14 +27,12 @@ int mulitablechose (void){
 
     // Prinf-Funktion für den Title
     printf(R"EOF(
- ___ ___  __ __  _     ______  ____   ____  ____   _        ___          __  __ __   ___    ___   _____   ___ 
-|   |   ||  |  || |   |      ||    | /    ||    \ | |      /  _]        /  ]|  |  | /   \  /   \ / ___/  /  _]
-| _   _ ||  |  || |   |      | |  | |  o  ||  o  )| |     /  [_ _____  /  / |  |  ||     ||     (   \_  /  [_ 
-|  \_/  ||  |  || |___|_|  |_| |  | |     ||     || |___ |    _]     |/  /  |  _  ||  O  ||  O  |\__  ||    _]
-|   |   ||  :  ||     | |  |   |  | |  _  ||  O  ||     ||   [_|_____/   \_ |  |  ||     ||     |/  \ ||   [_ 
-|   |   ||     ||     | |  |   |  | |  |  ||     ||     ||     |     \     ||  |  ||     ||     |\    ||     |
-|___|___| \__,_||_____| |__|  |____||__|__||_____||_____||_____|      \____||__|__| \___/  \___/  \___||_____|  
-
+___  ___      _ _   _       _     _      
+|  \/  |     | | | (_)     | |   | |     
+| .  . |_   _| | |_ _  __ _| |__ | | ___ 
+| |\/| | | | | | __| |/ _` | '_ \| |/ _ \
+| |  | | |_| | | |_| | (_| | |_) | |  __/
+\_|  |_/\__,_|_|\__|_|\__,_|_.__/|_|\___|
         )EOF");
     printf("\n");
 
@@ -47,7 +45,7 @@ int mulitablechose (void){
         // Auswahl nach den Themen
 
 		printf("\t -1- Randome alle Fragen \n");
-        printf("\t -2- Thema Bezogen\n");
+        printf("\t -2- Hacker Mode\n");
         printf("\t -3- Züruck zu Hauptmenu\n");
         printf("Was draf es sein?");
 
@@ -62,7 +60,7 @@ int mulitablechose (void){
 		Random();
 		break;
 	    case 2:
-        printf("Test");
+        system("START https://geekprank.com/hacker/simulator/");
 		break;
 		case 3:
         printf("Danke bis bald");
@@ -81,7 +79,7 @@ int mulitablechose (void){
 
 }
 
-int Random (){
+int Random (void){
 
     // Use current time as
     // seed for random generator
@@ -101,7 +99,7 @@ int Random (){
     switch (k)
     {
     case 1:
-
+    	system("START https://www.bilder-upload.eu/bild-4ec298-1576480311.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -177,6 +175,7 @@ int Random (){
         }
         break;
     case 2:
+    	system("START https://www.bilder-upload.eu/bild-37c5ec-1576480389.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -252,6 +251,7 @@ int Random (){
         }
         break;
     case 3:
+    	system("START https://www.bilder-upload.eu/bild-651958-1576480483.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -267,7 +267,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'F'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -289,7 +289,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'F'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -311,7 +311,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'F'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -327,86 +327,13 @@ int Random (){
         }
         break;
 
-        system("Pause");
-        fflush(stdin);
-        printf("a): [J]a/[N]ein\n");
-        scanf("%c",&A);
-        if (A == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("b) [J]a/[N]ein\n");
-        scanf("%c",&B);
-        if (B == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("c) [J]a/[N]ein\n");
-        scanf("%c",&C);
-        if (C == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("d) [J]a/[N]ein\n");
-        scanf("%c",&D);
-        if (D == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("e) [J]a/[N]ei\n");
-        scanf("%c",&E);
-        if (E == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("f) [J]a/[N]ein\n");
-        scanf("%c",&F);
-        if (F == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("Weiter machen ? oder Ende[E]?");
-        scanf("%c",&G);
-        if(G == 'E'){
-            H = 'e';
-        }
-        break;
     case 4:
+    	system("START https://www.bilder-upload.eu/bild-d9b480-1576480582.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -428,7 +355,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'F'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -450,7 +377,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'F'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -477,86 +404,13 @@ int Random (){
         }
         break;
 
-        system("Pause");
-        fflush(stdin);
-        printf("a): [J]a/[N]ein\n");
-        scanf("%c",&A);
-        if (A == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("b) [J]a/[N]ein\n");
-        scanf("%c",&B);
-        if (B == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("c) [J]a/[N]ein\n");
-        scanf("%c",&C);
-        if (C == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("d) [J]a/[N]ein\n");
-        scanf("%c",&D);
-        if (D == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("e) [J]a/[N]ei\n");
-        scanf("%c",&E);
-        if (E == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("f) [J]a/[N]ein\n");
-        scanf("%c",&F);
-        if (F == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("Weiter machen ? oder Ende[E]?");
-        scanf("%c",&G);
-        if(G == 'E'){
-            H = 'e';
-        }
-        break;
     case 5:
+    	system("START https://www.bilder-upload.eu/bild-1a760e-1576480668.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -578,7 +432,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'F'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -589,7 +443,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'F'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -611,7 +465,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'F'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -627,11 +481,12 @@ int Random (){
         }
         break;
     case 6:
+    	system("START https://www.bilder-upload.eu/bild-c3d131-1576480759.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -642,7 +497,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'F'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -664,7 +519,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'F'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -675,7 +530,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'F'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -702,11 +557,12 @@ int Random (){
         }
         break;
     case 7:
+    	system("START https://www.bilder-upload.eu/bild-faa2f3-1576480875.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -739,7 +595,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'F'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -761,7 +617,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'F'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -777,11 +633,12 @@ int Random (){
         }
         break;
     case 8:
+    	system("START https://www.bilder-upload.eu/bild-003589-1576480965.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -792,7 +649,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'F'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -803,7 +660,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'F'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -836,7 +693,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'F'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -852,6 +709,7 @@ int Random (){
         }
         break;
     case 9:
+    	system("START https://www.bilder-upload.eu/bild-03cc56-1576481145.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -878,7 +736,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'F'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -889,7 +747,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'F'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -900,7 +758,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'F'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -927,11 +785,12 @@ int Random (){
         }
         break;
     case 10:
+    	system("START https://www.bilder-upload.eu/bild-a5a3d0-1576481213.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -953,7 +812,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'F'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -975,7 +834,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'F'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -986,7 +845,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'F'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1002,11 +861,12 @@ int Random (){
         }
         break;
     case 11:
+    	system("START https://www.bilder-upload.eu/bild-904cdd-1576481278.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1028,7 +888,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'F'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1039,7 +899,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'F'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1077,11 +937,12 @@ int Random (){
         }
         break;
     case 12:
+    	system("START https://www.bilder-upload.eu/bild-e56da1-1576481663.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1092,7 +953,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'F'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1103,7 +964,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'F'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1114,7 +975,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'F'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1152,11 +1013,12 @@ int Random (){
         }
         break;
     case 13:
+    	system("START https://www.bilder-upload.eu/bild-468fa3-1576481709.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'J'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1167,7 +1029,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1178,7 +1040,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1227,11 +1089,12 @@ int Random (){
         }
         break;
     case 14:
+    	system("START https://www.bilder-upload.eu/bild-e8cb52-1576481784.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'F'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1253,7 +1116,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'F'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1264,7 +1127,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'F'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1275,7 +1138,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'F'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1302,11 +1165,12 @@ int Random (){
         }
         break;
     case 15:
+    	system("START https://www.bilder-upload.eu/bild-dcb5a3-1576481858.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'J'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1317,7 +1181,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1328,7 +1192,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1339,7 +1203,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1361,7 +1225,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1377,6 +1241,7 @@ int Random (){
         }
         break;
     case 16:
+    	system("START https://www.bilder-upload.eu/bild-1f7da7-1576481929.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -1392,7 +1257,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1403,7 +1268,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1425,7 +1290,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1452,6 +1317,7 @@ int Random (){
         }
         break;
     case 17:
+    	system("START https://www.bilder-upload.eu/bild-dc8e06-1576482011.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -1478,7 +1344,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1527,11 +1393,12 @@ int Random (){
         }
         break;
     case 18:
+    	system("START https://www.bilder-upload.eu/bild-f1b84b-1576482091.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'J'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1553,7 +1420,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1586,7 +1453,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1602,6 +1469,7 @@ int Random (){
         }
         break;
     case 19:
+    	system("START https://www.bilder-upload.eu/bild-a4f7d2-1576482174.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -1639,7 +1507,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1661,7 +1529,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1677,6 +1545,7 @@ int Random (){
         }
         break;
     case 20:
+    	system("START https://www.bilder-upload.eu/bild-2897c6-1576482232.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -1692,7 +1561,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1752,11 +1621,12 @@ int Random (){
         }
         break;
     case 21:
+    	system("START https://www.bilder-upload.eu/bild-74e90a-1576482295.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'J'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1778,7 +1648,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1800,7 +1670,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1811,7 +1681,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1827,6 +1697,7 @@ int Random (){
         }
         break;
     case 22:
+    	system("START https://www.bilder-upload.eu/bild-d21b29-1576482371.png.html ");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -1853,7 +1724,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1864,7 +1735,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1886,7 +1757,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1902,6 +1773,7 @@ int Random (){
         }
         break;
     case 23:
+    	system("START https://www.bilder-upload.eu/bild-1c7699-1576482534.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -1917,7 +1789,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1928,7 +1800,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1961,7 +1833,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -1977,6 +1849,7 @@ int Random (){
         }
         break;
     case 24:
+    	system("START https://www.bilder-upload.eu/bild-d20ddb-1576482608.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2014,7 +1887,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2025,7 +1898,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2036,7 +1909,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2052,6 +1925,7 @@ int Random (){
         }
         break;
     case 25:
+    	system("START https://www.bilder-upload.eu/bild-0f1dfc-1576482734.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2078,7 +1952,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2111,7 +1985,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2127,6 +2001,7 @@ int Random (){
         }
         break;
     case 26:
+    	system("START https://www.bilder-upload.eu/bild-2a5afd-1576482787.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2142,7 +2017,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2164,7 +2039,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2175,7 +2050,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2202,6 +2077,7 @@ int Random (){
         }
         break;
     case 27:
+    	system("START https://www.bilder-upload.eu/bild-0c9d0d-1576482927.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2228,7 +2104,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2239,7 +2115,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2261,7 +2137,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2277,6 +2153,7 @@ int Random (){
         }
         break;
     case 29:
+    	system("START https://www.bilder-upload.eu/bild-67a3ba-1576483004.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2325,7 +2202,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2352,6 +2229,7 @@ int Random (){
         }
         break;
     case 30:
+    	system("START https://www.bilder-upload.eu/bild-77ee9e-1576483071.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2367,7 +2245,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2400,7 +2278,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2427,6 +2305,7 @@ int Random (){
         }
         break;
     case 31:
+    	system("START https://www.bilder-upload.eu/bild-5c215e-1576483130.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2453,7 +2332,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2475,7 +2354,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2502,11 +2381,12 @@ int Random (){
         }
         break;
     case 32:
+    	system("START https://www.bilder-upload.eu/bild-25db9a-1576483210.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
         scanf("%c",&A);
-        if (A == 'J'){
+        if (A == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2517,7 +2397,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2561,7 +2441,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2577,6 +2457,7 @@ int Random (){
         }
         break;
     case 33:
+    	system("START https://www.bilder-upload.eu/bild-5ce76e-1576483299.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2603,7 +2484,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2625,7 +2506,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2636,7 +2517,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2652,6 +2533,7 @@ int Random (){
         }
         break;
     case 34:
+    	system("START https://www.bilder-upload.eu/bild-39677e-1576483413.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2667,7 +2549,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2727,6 +2609,7 @@ int Random (){
         }
         break;
     case 35:
+    	system("START https://www.bilder-upload.eu/bild-36a4d1-1576483634.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2753,7 +2636,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2764,7 +2647,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2775,7 +2658,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2786,7 +2669,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2802,6 +2685,7 @@ int Random (){
         }
         break;
     case 36:
+    	system("START https://www.bilder-upload.eu/bild-d4d53a-1576483712.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2817,7 +2701,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2839,7 +2723,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2850,7 +2734,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2861,7 +2745,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2877,6 +2761,7 @@ int Random (){
         }
         break;
     case 37:
+    	system("START https://www.bilder-upload.eu/bild-60cf29-1576483778.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2892,7 +2777,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2914,7 +2799,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2925,7 +2810,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2952,6 +2837,7 @@ int Random (){
         }
         break;
     case 38:
+    	system("START https://www.bilder-upload.eu/bild-01d844-1576484151.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -2967,7 +2853,7 @@ int Random (){
         fflush(stdin);
         printf("b) [J]a/[N]ein\n");
         scanf("%c",&B);
-        if (B == 'J'){
+        if (B == 'N'){
             printf("Richtig\n");
         }
         else
@@ -2978,7 +2864,7 @@ int Random (){
         fflush(stdin);
         printf("c) [J]a/[N]ein\n");
         scanf("%c",&C);
-        if (C == 'J'){
+        if (C == 'N'){
             printf("Richtig\n");
         }
         else
@@ -3000,7 +2886,7 @@ int Random (){
         fflush(stdin);
         printf("e) [J]a/[N]ei\n");
         scanf("%c",&E);
-        if (E == 'J'){
+        if (E == 'N'){
             printf("Richtig\n");
         }
         else
@@ -3027,6 +2913,7 @@ int Random (){
         }
         break;
     case 39:
+    	system("START https://www.bilder-upload.eu/bild-fbe88c-1576484222.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -3064,7 +2951,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -3086,7 +2973,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -3102,6 +2989,7 @@ int Random (){
         }
         break;
     case 40:
+    	system("START https://www.bilder-upload.eu/bild-351fcc-1576484298.png.html");
         system("Pause");
         fflush(stdin);
         printf("a): [J]a/[N]ein\n");
@@ -3139,7 +3027,7 @@ int Random (){
         fflush(stdin);
         printf("d) [J]a/[N]ein\n");
         scanf("%c",&D);
-        if (D == 'J'){
+        if (D == 'N'){
             printf("Richtig\n");
         }
         else
@@ -3161,7 +3049,7 @@ int Random (){
         fflush(stdin);
         printf("f) [J]a/[N]ein\n");
         scanf("%c",&F);
-        if (F == 'J'){
+        if (F == 'N'){
             printf("Richtig\n");
         }
         else
@@ -3177,310 +3065,49 @@ int Random (){
         }
         break;
     case 41:
-        system("Pause");
-        fflush(stdin);
-        printf("a): [J]a/[N]ein\n");
-        scanf("%c",&A);
-        if (A == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("b) [J]a/[N]ein\n");
-        scanf("%c",&B);
-        if (B == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("c) [J]a/[N]ein\n");
-        scanf("%c",&C);
-        if (C == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("d) [J]a/[N]ein\n");
-        scanf("%c",&D);
-        if (D == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("e) [J]a/[N]ei\n");
-        scanf("%c",&E);
-        if (E == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("f) [J]a/[N]ein\n");
-        scanf("%c",&F);
-        if (F == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("Weiter machen ? oder Ende[E]?");
-        scanf("%c",&G);
-        if(G == 'E'){
-            H = 'e';
-        }
+    	printf(R"EOF(
+
+		 
+.--------------------------------.
+|  .--------------------------.  |
+|[]|                          |[]|
+|  |    	Gehmeines         |  |
+|  |                          |  |
+|  |        Programm          |  |
+|  |                          |  |
+|  |                          |  |
+|  |        Snake             |  |
+|  |      Laufwerk 3          |  |
+|  |                          |  |
+|  `--------------------------'  |
+|      _______________   _____   |
+|     |   ___           |     |  |
+|     |  |   |          |     |  |
+|     |  |   |          |     |  |
+|     |  |   |          |     |  |
+|     |  |___|          |     |  |
+\_____|_________________|_____|__|
+ )EOF");
+
+
         break;
     case 42:
-        system("Pause");
-        fflush(stdin);
-        printf("a): [J]a/[N]ein\n");
-        scanf("%c",&A);
-        if (A == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("b) [J]a/[N]ein\n");
-        scanf("%c",&B);
-        if (B == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("c) [J]a/[N]ein\n");
-        scanf("%c",&C);
-        if (C == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("d) [J]a/[N]ein\n");
-        scanf("%c",&D);
-        if (D == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("e) [J]a/[N]ei\n");
-        scanf("%c",&E);
-        if (E == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("f) [J]a/[N]ein\n");
-        scanf("%c",&F);
-        if (F == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("Weiter machen ? oder Ende[E]?");
-        scanf("%c",&G);
-        if(G == 'E'){
-            H = 'e';
-        }
+    	printf("Hier gibt es nix zu sehen\n");
+    	prinft("Geh weiter");
+
         break;
     case 43:
-        system("Pause");
-        fflush(stdin);
-        printf("a): [J]a/[N]ein\n");
-        scanf("%c",&A);
-        if (A == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("b) [J]a/[N]ein\n");
-        scanf("%c",&B);
-        if (B == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("c) [J]a/[N]ein\n");
-        scanf("%c",&C);
-        if (C == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("d) [J]a/[N]ein\n");
-        scanf("%c",&D);
-        if (D == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("e) [J]a/[N]ei\n");
-        scanf("%c",&E);
-        if (E == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("f) [J]a/[N]ein\n");
-        scanf("%c",&F);
-        if (F == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("Weiter machen ? oder Ende[E]?");
-        scanf("%c",&G);
-        if(G == 'E'){
-            H = 'e';
-        }
+
         break;
     case 44:
-        system("Pause");
-        fflush(stdin);
-        printf("a): [J]a/[N]ein\n");
-        scanf("%c",&A);
-        if (A == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("b) [J]a/[N]ein\n");
-        scanf("%c",&B);
-        if (B == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("c) [J]a/[N]ein\n");
-        scanf("%c",&C);
-        if (C == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("d) [J]a/[N]ein\n");
-        scanf("%c",&D);
-        if (D == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("e) [J]a/[N]ei\n");
-        scanf("%c",&E);
-        if (E == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("f) [J]a/[N]ein\n");
-        scanf("%c",&F);
-        if (F == 'J'){
-            printf("Richtig\n");
-        }
-        else
-        {
-            printf("Falsch\n");
-        }
-        system("PAUSE");
-        fflush(stdin);
-        printf("Weiter machen ? oder Ende[E]?");
-        scanf("%c",&G);
-        if(G == 'E'){
-            H = 'e';
-        }
+
         break;
 
     default:
     printf("Keine Anschluss unter dieser Number");
     break;
     }
+
 
 
     }
