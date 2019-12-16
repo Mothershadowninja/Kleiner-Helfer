@@ -16,7 +16,7 @@ int Vereinungsmenge (void);
 int integralrechnung (void);
 
 // Elemtarfunktionen
-
+int Elementarfunktion ();
 // Kurvendiskussion
 int kurvendiskussion (void);
 

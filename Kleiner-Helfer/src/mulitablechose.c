@@ -3093,7 +3093,7 @@ int Random (void){
         break;
     case 42:
     	printf("Hier gibt es nix zu sehen\n");
-    	prinft("Geh weiter");
+    	printf("Geh weiter");
 
         break;
     case 43:

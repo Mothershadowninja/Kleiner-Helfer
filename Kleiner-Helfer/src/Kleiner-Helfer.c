@@ -76,7 +76,7 @@ int main(void){
 	   	 break;
 	 case 4:
 		 system("cls");
-		 printf("4");
+		 Elementarfunktion ();
 
 		 break;
 	 case 5:
